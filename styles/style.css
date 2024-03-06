@@ -1,0 +1,109 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 96%);
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--Very-Light-Gray);
+}
+.container {
+    padding: 3% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .first {
+    font-size: 35px;
+    font-weight: 200;
+    color: var(--Very-Dark-Blue);
+}
+.container .second {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+.container .main-desc {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--Grayish-Blue);
+    margin-bottom: 30px;
+}
+
+
+
+.feature-boxes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.feature-boxes .box {
+    background-color: white;
+    box-shadow: 2px 5px 10px hsla(234, 12%, 34%, 0.177);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 300px;
+    margin: 15px 10px;
+}
+.feature-boxes .box h2 {
+    color: var(--Very-Dark-Blue);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.feature-boxes .box p {
+    color: var(--Grayish-Blue);
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.feature-boxes .box img {
+    margin-left: auto;
+}
+.first-box {
+    border-top: 5px solid var(--Cyan);
+}
+.second-box {
+    border-top: 5px solid var(--Red);
+}
+.third-box {
+    border-top: 5px solid var(--Orange);
+}
+.forth-box {
+    border-top: 5px solid var(--Blue);
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 5% 5%;
+    }
+    .feature-boxes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-boxes .box {
+        height: fit-content;
+        width: 80%;
+        margin: 10px 10px;
+    }
+    .box-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
